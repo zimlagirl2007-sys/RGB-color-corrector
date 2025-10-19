@@ -1,8 +1,10 @@
+// This code allows you to have thhe RGB turn on and be a specific colour by giving each LEDs a specific value
+// This is a analog output program
 void setup() {
   // put your setup code here, to run once:
  Serial.begin(9600); 
 
-  // make the pushbutton's pin an input: 
+  // define the pinmodes as an OUTPUT
 
   pinMode(13, OUTPUT);  
 
@@ -13,6 +15,7 @@ void setup() {
 
 void loop() {
 
+// define each LED to a specific value
   analogWrite(13,242);
 
   analogWrite(12,8); 
