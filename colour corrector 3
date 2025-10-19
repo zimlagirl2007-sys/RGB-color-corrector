@@ -1,0 +1,26 @@
+void setup() {
+  // put your setup code here, to run once:
+ Serial.begin(9600); 
+
+  // make the pushbutton's pin an input: 
+
+  pinMode(13, OUTPUT);  
+
+  pinMode(12, OUTPUT);  
+
+  pinMode(11, OUTPUT);   
+}
+
+void loop() {
+
+  analogWrite(13,194);
+
+  analogWrite(12,243); 
+
+  analogWrite(11,13); 
+
+  delay(1);  // delay in between reads for stability
+
+  // put your main code here, to run repeatedly:
+
+}
